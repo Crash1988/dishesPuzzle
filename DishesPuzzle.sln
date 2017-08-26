@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DishesPuzzle", "DishesPuzzle\DishesPuzzle.csproj", "{30B0275C-AAB7-4C06-BC5C-513A6D774B7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30B0275C-AAB7-4C06-BC5C-513A6D774B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B0275C-AAB7-4C06-BC5C-513A6D774B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B0275C-AAB7-4C06-BC5C-513A6D774B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B0275C-AAB7-4C06-BC5C-513A6D774B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67ED3988-F1D9-4C0A-9B58-47ACB715B84D}
+	EndGlobalSection
+EndGlobal
