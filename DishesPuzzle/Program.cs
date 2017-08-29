@@ -78,7 +78,12 @@ namespace DishesPuzzle
                         // Read the stream to a string
                         String line = streamReader.ReadLine();
                         string[] elemLine = line.Split(',');
-                        string value = elemLine[1].Substring(2, elemLine[1].Length - 2);
+                        string value = "";
+                        //checking because in the sample data target price have a white space after comma
+                        if (elemLine[1][0] == ' ')
+                            value = elemLine[1].Substring(2, elemLine[1].Length - 2);
+                        else
+                            value = elemLine[1].Substring(1, elemLine[1].Length - 1);
                         targetPrice = Decimal.Parse(value);
 
                         while ( ( line = streamReader.ReadLine() ) != null) {

@@ -9,7 +9,7 @@ The program must run with different data files, so provide instructions on how t
 Use any programming language to solve this puzzle as long as it can be ran from linux command line. 
 Here are some sample data values: 
 
-Target price, $15.05
+Target price,$15.05
 
 mixed fruit,$2.15
 french fries,$2.75
