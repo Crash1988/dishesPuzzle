@@ -1,4 +1,4 @@
-# dishesPuzzle
+# Dish Puzzle
 Requirements: 
 
 Write a program which will process the data listed below. The data must be placed into a csv file and read from it. 
