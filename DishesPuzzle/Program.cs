@@ -44,6 +44,9 @@ namespace DishesPuzzle
                 //first call to recursive method
                 recursive(new List<decimal>(), dishesValue);
 
+                //decimal test = dishesMenu.Sum(d=>d.Value);
+                //Console.WriteLine(test + " testing sum method " + sumArray(dishesMenu.Values.ToList()));
+
                 //check if found a combination of dishes
                 if (found)
                 {
@@ -122,12 +125,12 @@ namespace DishesPuzzle
             {
                 if (found)
                     return;
-                if (sumArray(actual) == targetPrice)
+                if (actual.Sum(a=>a) == targetPrice)
                 {
                     found = true;
                     combinationDish = actual.ToList();
                 }
-                if (sumArray(actual) > targetPrice)
+                if (actual.Sum(a => a) > targetPrice)
                     return;
                 
                 for (int i = 0; i < dishes.Length; i++)
@@ -136,19 +139,6 @@ namespace DishesPuzzle
                     recursive(actual, dishes.Where((asd, elemt) => elemt != i).ToArray());
                     actual.Remove(dishes[i]);
                 }
-            }
-
-            /***
-             * return the sum of all element in a decimal list
-             */
-            decimal sumArray(List<decimal> listElem)
-            {
-                decimal sum = 0;
-                foreach (decimal itemArr in listElem)
-                {
-                    sum += itemArr;
-                }
-                return sum;
             }
         }
     }
